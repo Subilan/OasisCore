@@ -7,8 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * 类 <b>Logs</b><br/>
- * <p>控制台和服务器内信息的发送</p>
+ * <b>Logs</b> - 控制台和服务器内信息的发送
  */
 public class Logs {
     public static Logger logger;

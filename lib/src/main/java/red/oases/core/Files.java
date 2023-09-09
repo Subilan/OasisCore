@@ -7,17 +7,25 @@ import java.io.File;
 import java.util.Map;
 
 /**
- * 类 <b>Files</b><br/>
- * <p>本地普通文件、配置文件的读写和访问</p>
+ * <b>Files</b> - 本地普通文件、配置文件的读写和访问
  */
 public class Files {
+    /**
+     * 插件数据文件夹，一般通过 <code>getDataFolder</code> 方法获得
+     */
     public static File datafolder;
+    /**
+     * Files 所管理的所有文件对象的键值对
+     */
     public static Map<String, File> f;
+    /**
+     * Files 所管理的所有配置对象的键值对
+     */
     public static Map<String, FileConfiguration> c;
 
     /**
      * 在开始使用本类之前必须调用此函数进行初始化。
-     * @param datafolder 数据文件夹对象，一般通过 <code>getDataFolder</code> 方法获得。
+     * @param datafolder 数据文件夹对象
      */
     public static void init(File datafolder) {
         Files.datafolder = datafolder;

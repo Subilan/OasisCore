@@ -4,8 +4,7 @@ import net.kyori.adventure.text.Component;
 import org.bukkit.plugin.Plugin;
 
 /**
- * 类 <b>Oasis</b><br/>
- * <p>OasisCore 的外部包装类</p>
+ * <b>Oasis</b> - OasisCore 的外部包装类
  */
 public class Oasis {
     public static Component displayname;

@@ -9,10 +9,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * 类 <b>DB</b><br/>
- * <p>数据库连接的相关基础设计。</p>
+ * <b>DB</b> - 数据库连接的相关基础设计。
  */
 public class DB {
+    // Hikari 提供的 DataSource，使用 <code>HikariConfig</code> 构建，用于获取新的链接
     public static HikariDataSource dataSource;
 
     /**

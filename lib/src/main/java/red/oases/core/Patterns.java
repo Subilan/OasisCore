@@ -6,8 +6,7 @@ import java.util.function.Function;
 import java.util.regex.Pattern;
 
 /**
- * 类 <b>Patterns</b><br/>
- * <p>字符串相关验证和提取</p>
+ * <b>Patterns</b> - 字符串相关验证和提取
  */
 public class Patterns {
 

@@ -7,8 +7,7 @@ import java.sql.SQLException;
 import java.util.function.Function;
 
 /**
- * 类 <b>SQL</b><br/>
- * <p>数据库内语句的执行和数据获取</p>
+ * <b>SQL</b> - 数据库内语句的执行和数据获取
  */
 public class SQL {
 

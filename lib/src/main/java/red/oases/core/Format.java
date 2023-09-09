@@ -13,8 +13,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * 类 <b>Format</b><br/>
- * <p>字符串处理、类型转换和文本组件构建，以及相关判断</p>
+ * <b>Format</b> - 字符串处理、类型转换和文本组件构建，以及相关判断
  */
 public class Format {
 
