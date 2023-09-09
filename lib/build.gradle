@@ -1,25 +1,25 @@
-import java.net.URI
-import java.text.SimpleDateFormat
-import java.util.*
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 plugins {
-    `java-library`
+    id "java-library"
+    id "java"
 }
 
 repositories {
     mavenCentral()
     maven {
         name = "papermc-repo"
-        url = URI.create("https://repo.papermc.io/repository/maven-public/")
+        url = "https://repo.papermc.io/repository/maven-public/"
     }
     maven {
         name = "sonatype"
-        url = URI.create("https://oss.sonatype.org/content/groups/public/")
+        url = "https://oss.sonatype.org/content/groups/public/"
     }
 }
 
 group = "red.oases"
-version = SimpleDateFormat("YYYY-MM-dd_HH.mm.ss").format(Date())
+version = new SimpleDateFormat("YYYY-MM-dd_HH.mm.ss").format(new Date())
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
@@ -38,7 +38,11 @@ java {
     }
 }
 
-tasks.named<Test>("test") {
+javadoc {
+    source = sourceSets.main.allJava
+}
+
+tasks.named("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
